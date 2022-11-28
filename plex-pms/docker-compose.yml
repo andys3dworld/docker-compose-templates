@@ -1,0 +1,16 @@
+version: '2'
+services:
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/London
+      - PLEX_CLAIM=<claim_token>
+      - PLEX_UID=1000
+      - GROUP_UID=1000
+    network_mode: host
+    volumes:
+      - /home/user/plex-pms/config:/config
+      - /home/user/plex-pms/transcode:/transcode
+      - /mnt/media:/data
