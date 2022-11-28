@@ -15,3 +15,9 @@ FSTAB
 create /home/user/samba_creds with your CIFS creds and chmod 600 it
 username=<username>
 password=<password>
+
+starting with docker-compose
+cd <folder>
+docker-compose up -d
+
+always make sure your docker-compose.yml has restart: unless-stopped
