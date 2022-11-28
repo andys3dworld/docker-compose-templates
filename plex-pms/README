@@ -1,0 +1,5 @@
+mkdirs 'config' and 'transcode'
+populate the plex claim token
+docker up -d
+browse to web address
+if not presented with first time setup, log out and log in again to claim the server
